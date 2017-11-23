@@ -33,7 +33,7 @@ if (isset($_REQUEST['logout'])) {
 <html>
     <head>
         <script src="http://code.jquery.com/jquery-3.0.0.min.js" type="text/javascript"></script>
-        <script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+        <script src="https://cdn.auth0.com/js/auth0/9.0.0/auth0.min.js"></script>
 
         <script type="text/javascript" src="//use.typekit.net/iws6ohy.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -52,12 +52,8 @@ if (isset($_REQUEST['logout'])) {
           var AUTH0_CALLBACK_URL = '<?php echo getenv("AUTH0_CALLBACK_URL") ?>';
         </script>
 
-
-        <script src="public/app.js"> </script>
+        <script src="public/app.js"></script>
         <link href="public/app.css" rel="stylesheet">
-
-
-
     </head>
     <body class="home">
         <div class="container">
